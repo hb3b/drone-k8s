@@ -2,7 +2,7 @@
 
 ENV_VAR_KEY_ARRAY=()
 
-for var in "E${!DRONE_@}"; do
+for var in "${!DRONE_@}"; do
     ENV_VAR_KEY_ARRAY+=("\${$var}")
 done
 
